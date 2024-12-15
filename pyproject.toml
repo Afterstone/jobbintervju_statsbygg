@@ -1,0 +1,26 @@
+[project]
+name = "jobbintervju-statsbygg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "apache-airflow==2.10.3",
+    "requests>=2.32.3",
+]
+
+[tool.setuptools]
+packages = ["include"]
+
+[tool.setuptools.package-data]
+include = ["*.py"]
+
+[build-system]
+requires = ["setuptools>=75.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+
+[tool.pyright]
+extraPaths = ["include"]
