@@ -2,8 +2,7 @@
 
 ## Bakgrunn:
 
-En datakilde som inneholder eiendomsinformasjon (som f.eks. Kartverket.no), er tilgjengelig
-via et offentlig API. Disse dataene skal onboardes til Statsbygg sin dataplattform.
+En datakilde som inneholder eiendomsinformasjon (som f.eks. Kartverket.no), er tilgjengelig via et offentlig API. Disse dataene skal onboardes til Statsbygg sin dataplattform.
 
 ## Mål:
 1. Onboard den offentlige datakilden til dataplattformen Onboard dataene fra kilden til dataplattformen og dra dataen gjennom standardiserte zoner.
