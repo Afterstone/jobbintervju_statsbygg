@@ -1,5 +1,5 @@
 create_folders:
-	mkdir -p ./dags ./logs ./plugins ./config ./data ./include
+	mkdir -p ./dags ./logs ./plugins ./config ./data ./include ./keys
 
 init_airflow:
 	sudo docker compose up airflow-init
