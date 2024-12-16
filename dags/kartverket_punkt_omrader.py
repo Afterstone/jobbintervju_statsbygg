@@ -83,7 +83,8 @@ SCHEMA_FIELDS = [
         name='matrikkelnummertekst',
         type_='STRING',
         mode='NULLABLE',
-        description='Generert tekst ut fra hvilken matrikkelenhet teigen tilhører. Eventuelt flere matrikkelnummere skyldes manglende, uavklarte grenser eller uregistrert jordsameie.'
+        description='Generert tekst ut fra hvilken matrikkelenhet teigen tilhører.'
+                    ' Eventuelt flere matrikkelnummere skyldes manglende, uavklarte grenser eller uregistrert jordsameie.'
     ),
     SchemaField(
         api_name='meterFraPunkt',
@@ -104,7 +105,8 @@ SCHEMA_FIELDS = [
         name='objekttype',
         type_='STRING',
         mode='NULLABLE',
-        description='Stedfesting/geometri hentes fra to objekttyper, teig eller anleggsprojeksjonsflate. Den siste er «fotavtrykk» av volumer som fins over eller under teiger på terrenget'
+        description='Stedfesting/geometri hentes fra to objekttyper, teig eller anleggsprojeksjonsflate.'
+                    ' Den siste er «fotavtrykk» av volumer som fins over eller under teiger på terrenget'
     ),
     SchemaField(
         api_name='oppdateringsdato',
@@ -388,7 +390,7 @@ def insert_csv_to_bigquery(project_id: str, dataset_id: str, table_id: str, csv_
 def kartverket_punkt_dag():
     PROJECT_ID = "rikard-test"
     DATASET_ID = 'Kartverket'
-    TABLE_ID = 'Punkt'
+    TABLE_ID = 'RAW_Punkt'
 
     create_dataset = BigQueryCreateEmptyDatasetOperator(task_id="create_dataset", dataset_id=DATASET_ID, exists_ok=True)
 
